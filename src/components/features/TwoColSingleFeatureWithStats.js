@@ -98,24 +98,6 @@ export default ({ textOnLeft = false, catagories }) => {
         return;
     }
 
-    const captcha = await axios.post('https://security-alpha.vercel.app/signup-with-hcaptcha', {
-        token: token
-    });
-
-    if (!captcha.data.success) {
-        toast.error("hCaptcha Error", {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-        });
-        return;
-    }
-
     if (!auth?.currentUser?.email) {
       toast.error("Please Login to provide an email", {
         position: "top-center",
