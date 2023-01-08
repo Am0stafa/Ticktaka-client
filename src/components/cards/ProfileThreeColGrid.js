@@ -50,7 +50,7 @@ export default ({
   cards = [
     {
       imageSrc: "/assets/maro.jpeg",
-      position: "Fronetnd Developer",
+      position: "Full Stack Software Engineer",
       name: "Marawan Abdelrahim",
       links: [
         {
@@ -107,7 +107,7 @@ export default ({
     },
     {
       imageSrc: "/assets/omar.jpeg",
-      position: "Analytics",
+      position: "Data Scientist",
       name: "Omar Khaled",
       links: [
         {
