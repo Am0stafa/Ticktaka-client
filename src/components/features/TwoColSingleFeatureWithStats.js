@@ -83,20 +83,20 @@ export default ({ textOnLeft = false, catagories }) => {
   };
 
   const handleClick = async () => {
-    // if (!token) {
-    //     toast.error("Please verify hCaptcha", {
-    //         position: "top-center",
-    //         autoClose: 5000,
-    //         hideProgressBar: false,
-    //         closeOnClick: true,
-    //         pauseOnHover: true,
-    //         draggable: true,
-    //         progress: undefined,
-    //         theme: "colored",
-    //     });
+    if (!token) {
+        toast.error("Please verify hCaptcha", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
 
-    //     return;
-    // }
+        return;
+    }
 
     // const captcha = await axios.post('https://security-alpha.vercel.app/signup-with-hcaptcha', {
     //     token: token
