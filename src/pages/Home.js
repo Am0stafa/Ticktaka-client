@@ -252,7 +252,7 @@ const Home = () => {
             <div style={{ marginTop: "35px" }}></div>
 
             <Pagination />
-            <Me nu
+            <Menu
               attribute="categories"
               showMore={true}
               translations={{
